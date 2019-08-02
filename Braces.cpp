@@ -23,22 +23,4 @@ int main()
 
 bool valid_braces(string braces)
 {
-    int length = braces.length();
-    int key = 0;
-    for (int i = 0; i < length; i++)
-    {
-        if (braces[i] == '(' || braces[i] == '[' || braces[i] == '{')
-        {
-            key += 1;
-        }
-        else if (braces[i] == braces[i - 1])
-        {
-            key -= 1;
-        }
-        else
-        {
-            return false;
-        }
-    }
-    return !key;
 }
