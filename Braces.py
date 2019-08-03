@@ -1,7 +1,7 @@
 # C++不熟练，失败了，先用python实现
 import queue
 import time
-string = '[({})](]'
+string = "[({})](][](()){}{}{}{}}{"
 
 # 这个代码的思路就是创建一个lifo模型，然后查到返向括号就提取，用来判断是否正确闭合
 def validBraces(string):
@@ -42,12 +42,12 @@ def validBraces2(string):
         return False
 
 if __name__ == "__main__":
-    begin = time.time() * 10 ** 5
+    begin1 = time.time()
     print(validBraces(string))
-    over = time.time() * 10 ** 5
-    print(over - begin)
-    begin = time.time() * 10 ** 5
+    over1 = time.time()
+    print((over1 - begin1) * 10 ** 9)
+    begin2 = time.time()
     print(validBraces2(string))
-    over = time.time() * 10 ** 5
-    print(over - begin)
+    over2 = time.time()
+    print((over2 - begin2) * 10 ** 9)
     #方法二效率得到显著提高
