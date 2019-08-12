@@ -6,7 +6,7 @@ class Kata
 public:
     std::vector<int> sortArray(std::vector<int> array)
     {
-        if (array == NULL)
+        if (array.empty())
             return array;
         for (auto i = array.begin(); i != array.end() - 1; ++i)
         {
